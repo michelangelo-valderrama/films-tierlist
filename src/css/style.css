@@ -1,8 +1,66 @@
-body {
-    background: #111;
-    color: #fff;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-img {
-    max-width: 120px;
+body {
+    background: #0d1117;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+}
+
+header {
+    background: #161b22;
+    padding: 10px 0 10px 50px;
+    font-weight: bold;
+    font-family: "Overpass Mono", monospace;
+    display: flex;
+}
+
+.header-title {
+    font-size: 2rem;
+    padding-top: 20px;
+    margin-left: 10px;
+}
+
+main {
+    width: 90%;
+    margin: 5rem auto 0 auto;
+}
+
+.container {
+    display: flex;
+}
+
+.left-side {
+    width: 50%;
+    margin: 0 15px;
+}
+
+.films-list {
+    background: #161b22;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.films-list img {
+    height: 170px;
+    margin: 15px 10px;
+    border-radius: 4px;
+}
+
+
+.right-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.tierlist {
+    background: #161b22;
+    height: 200px;
+    margin-bottom: 20px;
 }
