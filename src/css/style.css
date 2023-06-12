@@ -1,27 +1,27 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    background: #0d1117;
-    color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    color: #e6edf3;
+
 }
 
 header {
-    background: #161b22;
     padding: 10px 0 10px 50px;
     font-weight: bold;
     font-family: "Overpass Mono", monospace;
     display: flex;
 }
 
+header img {
+    height: 35px;
+}
+
 .header-title {
-    font-size: 2rem;
-    padding-top: 20px;
-    margin-left: 10px;
+    font-size: 1.3rem;
+    padding-top: 10px;
+    margin-left: 15px;
 }
 
 main {
@@ -34,23 +34,50 @@ main {
 }
 
 .left-side {
-    width: 50%;
+    width: 45%;
     margin: 0 15px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .films-list {
-    background: #161b22;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 60%;
+    margin-bottom: 20px;
 }
 
 .films-list img {
-    height: 170px;
-    margin: 15px 10px;
-    border-radius: 4px;
+    max-width: 100px;
+    margin: 10px 10px;
+    border-radius: 5px;
 }
 
+.films-list img:hover {
+    opacity: 40%;
+}
+
+.buttons {
+    margin: 10px 0;
+    width: 90%;
+    min-width: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    height: 50px;
+    width: 25%;
+    min-width: 85px;
+    margin-bottom: 10px;
+}
+
+/* button:hover {
+    opacity: 60%;
+} */
 
 .right-side {
     width: 50%;
@@ -60,7 +87,59 @@ main {
 }
 
 .tierlist {
-    background: #161b22;
     height: 200px;
+    width: 100%;
     margin-bottom: 20px;
+}
+
+.tier {
+    height: 100%;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tier p {
+    font-size: 2rem;
+    color: #010409;
+}
+
+.red {
+    background: #fa7970;
+}
+
+.green {
+    background: #7ce38b;
+}
+
+.blue {
+    background: #a2d2fb;
+}
+
+.borders {
+    border: 1px solid #21262d;
+    border-radius: 5px;
+}
+
+.borders-nocolor {
+    border: 0px solid unset;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.dark-1 {
+    background: #010409;
+}
+
+.dark-2 {
+    background: #0d1117;
+}
+
+.dark-3 {
+    background: #161b22;
+
+}
+
+.click {
+    opacity: 40%;
 }
