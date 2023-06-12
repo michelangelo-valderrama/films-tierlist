@@ -10,16 +10,17 @@ module.exports = {
         filename: 'main.js'
     },
     devServer: {
-        static: './build'
+        static: './src',
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html'
-        }), new CopyPlugin({
+            template: './src/index.html',
+        }), 
+        new CopyPlugin({
             patterns: [
                 { from: "./src/css", to: "css" },
                 { from: "./src/img", to: "img" }
-            ]
-        })
-    ]
+            ],
+        }),
+    ],
 };

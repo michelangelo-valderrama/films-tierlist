@@ -6,34 +6,40 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
 <script defer src="main.js"></script></head>
-<body>
-    <header>
-        <img src="./img/logo.png" alt="logo" height="50px">
+<body class="dark-1">
+    <header class="dark-3">
+        <img src="./img/logo.png" alt="logo">
         <h1 class="header-title">Film-Tierlist</h1>
     </header>
     <main>
         <div class="container">
             <div class="left-side">
-                <div class="films-list">
-                    <img src="./img/film01.jpg" alt="film01">
-                    <img src="./img/film02.jpg" alt="film02">
-                    <img src="./img/film03.jpg" alt="film03">
-                    <img src="./img/film04.jpg" alt="film04">
+                <div class="films-list dark-2 borders">
+
                 </div>
                 <div class="buttons">
-                    <button>Add to S</button>
-                    <button>Add to B</button>
-                    <button>Add to F</button>
+                    <button class="pointer dark-2 borders" title="0">Add to S</button>
+                    <button class="pointer dark-2 borders" title="1">Add to B</button>
+                    <button class="pointer dark-2 borders" title="2">Add to F</button>
                 </div>
             </div>
         
         
             <div class="right-side">
-                <div class="tierlist"></div>
+                <div class="tierlist dark-2 borders">
+                    <div class="tier red borders-nocolor"><p>S</p></div>
+                    <div class="tier-content"></div>
+                </div>
 
-                <div class="tierlist"></div>
+                <div class="tierlist dark-2 borders">
+                    <div class="tier green borders-nocolor"><p>B</p></div>
+                    <div class="tier-content"></div>
+                </div>
                 
-                <div class="tierlist"></div>
+                <div class="tierlist dark-2 borders">
+                    <div class="tier blue borders-nocolor"><p>F</p></div>
+                    <div class="tier-content"></div>
+                </div>
             </div>
         </div>
     </main>

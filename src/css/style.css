@@ -16,6 +16,7 @@ header {
 
 header img {
     height: 35px;
+    margin: 0;
 }
 
 .header-title {
@@ -47,17 +48,18 @@ main {
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 60%;
+    min-height: 300px;
     margin-bottom: 20px;
 }
 
-.films-list img {
-    max-width: 100px;
+img {
+    max-height: 170px;
     margin: 10px 10px;
     border-radius: 5px;
 }
 
 .films-list img:hover {
-    opacity: 40%;
+    opacity: 50%;
 }
 
 .buttons {
@@ -75,9 +77,9 @@ button {
     margin-bottom: 10px;
 }
 
-/* button:hover {
-    opacity: 60%;
-} */
+button:hover {
+    opacity: 80%;
+}
 
 .right-side {
     width: 50%;
@@ -90,6 +92,7 @@ button {
     height: 200px;
     width: 100%;
     margin-bottom: 20px;
+    display: flex;
 }
 
 .tier {
@@ -97,6 +100,11 @@ button {
     width: 90px;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.tier-content {
+    display: flex;
     align-items: center;
 }
 
@@ -141,5 +149,14 @@ button {
 }
 
 .click {
-    opacity: 40%;
+    opacity: 50%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.added {
+    cursor: default;
+    filter: grayscale(80%);
 }
