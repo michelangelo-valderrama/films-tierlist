@@ -32,11 +32,12 @@ main {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.left-side {
-    width: 45%;
-    margin: 0 15px;
+.up-side {
+    width: 100%;
+    margin: 15px;
     min-width: 300px;
     display: flex;
     flex-direction: column;
@@ -47,8 +48,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 60%;
-    min-height: 300px;
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -63,8 +63,7 @@ img {
 }
 
 .buttons {
-    margin: 10px 0;
-    width: 90%;
+    width: 50%;
     min-width: 40px;
     display: flex;
     justify-content: space-evenly;
@@ -81,11 +80,11 @@ button:hover {
     opacity: 80%;
 }
 
-.right-side {
-    width: 50%;
+.down-side {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 0 15px;
+    margin: 15px;
 }
 
 .tierlist {
@@ -97,7 +96,8 @@ button:hover {
 
 .tier {
     height: 100%;
-    width: 90px;
+    width: 10%;
+    max-width: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,7 +122,22 @@ button:hover {
 }
 
 .blue {
-    background: #a2d2fb;
+    background: #77bdfb;
+}
+
+.c-red {
+    color: #fa7970;
+    font-weight: bolder;
+}
+
+.c-green {
+    color: #7ce38b;
+    font-weight: bolder;
+}
+
+.c-blue {
+    color: #77bdfb;
+    font-weight: bolder;
 }
 
 .borders {

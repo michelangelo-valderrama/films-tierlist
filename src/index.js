@@ -6,9 +6,10 @@ const tiers = document.getElementsByClassName("tier-content")
 
 let imgSelected = []
 let imgAdded = []
+let filmsNumber = 9
 
 const fragment = document.createDocumentFragment()
-for (let i = 1; i <= 6; i++) {
+for (let i = 1; i <= filmsNumber; i++) {
     const img = document.createElement("img")
     img.setAttribute("src", `./img/film0${i}.jpg`)
     img.setAttribute("alt", `film0${i}`)
